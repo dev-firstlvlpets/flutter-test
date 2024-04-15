@@ -12,6 +12,8 @@ migrate_working_dir/
 
 local_maps.properties
 .env
+# exclude the API key from version control
+env.g.dart
 
 # IntelliJ related
 *.iml

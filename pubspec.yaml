@@ -27,6 +27,8 @@ dependencies:
   google_maps_flutter: ^2.2.8
   location: ^6.0.1
   sentry_flutter: ^7.19.0
+  envied: ^0.5.4+1
+
   # flutter_polyline_points: ^2.0.0
 
 dev_dependencies:
@@ -34,6 +36,8 @@ dev_dependencies:
     sdk: flutter
 
   flutter_lints: ^2.0.0
+  envied_generator: ^0.5.4+1
+  build_runner: ^2.4.9
 
 flutter:
   uses-material-design: true
