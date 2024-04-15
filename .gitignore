@@ -10,6 +10,8 @@
 .svn/
 migrate_working_dir/
 
+local_maps.properties
+
 # IntelliJ related
 *.iml
 *.ipr
