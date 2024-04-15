@@ -3,7 +3,7 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: Dart
+name: Flutter Test
 
 on:
   push:
@@ -36,6 +36,8 @@ jobs:
         run: dart run build_runner build -d
       - run: flutter test
       - run: flutter build apk
+        env:
+          MAPS_API_KEY: ${{ secrets.MAPS_API_KEY }}
       - run: flutter build appbundle
       # Note: This workflow uses the latest stable version of the Dart SDK.
       # You can specify other versions if desired, see documentation here:
