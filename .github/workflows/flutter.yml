@@ -25,7 +25,9 @@ jobs:
           channel: stable
           flutter-version-file: pubspec.yaml # path to pubspec.yaml
         
-        run: flutter --version
+      - run: flutter --version
+        
+      - name: Build environment secrets
         env:
           SENTRY_DSN: ${{ secrets.SENTRY_DSN }}
         run: dart run build_runner build -d
