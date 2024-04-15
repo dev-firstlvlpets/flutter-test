@@ -26,6 +26,7 @@ jobs:
           flutter-version-file: pubspec.yaml # path to pubspec.yaml
         
       - run: flutter --version
+      - run: flutter pub get
         
       - name: Build environment secrets
         env:
@@ -33,7 +34,6 @@ jobs:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
         run: dart run build_runner build -d
-      - run: flutter pub get
       - run: flutter test
       - run: flutter build apk
       - run: flutter build appbundle
