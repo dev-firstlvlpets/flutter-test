@@ -1,0 +1,6 @@
+{
+  "appTitle": "firstlvlpets",
+  "@appTitle": {
+    "description": "The title of the application"
+  }
+}
