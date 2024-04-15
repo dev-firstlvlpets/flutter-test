@@ -11,6 +11,7 @@
 migrate_working_dir/
 
 local_maps.properties
+.env
 
 # IntelliJ related
 *.iml
