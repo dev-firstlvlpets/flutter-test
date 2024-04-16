@@ -7,7 +7,7 @@ name: iOS_Release
 
 on:
   push:
-    branches: [ ]
+    branches: [ "no-branch" ]
 
 jobs:
   build:
