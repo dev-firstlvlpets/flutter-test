@@ -26,8 +26,16 @@ jobs:
         with:
           channel: stable
           flutter-version-file: pubspec.yaml # path to pubspec.yaml
+          cache: true
+          cache-key: "flutter-:os:-:channel:-:version:-:arch:-:hash:" # optional, change this to force refresh cache
 
       - run: flutter pub get
       - run: flutter test
       - run: flutter build ios --release --no-codesign
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: App Release
+          path: /Users/runner/work/flutter-test/flutter-test/build/ios/iphoneos/
+
 
