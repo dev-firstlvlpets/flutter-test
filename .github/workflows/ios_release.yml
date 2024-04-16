@@ -32,7 +32,9 @@ jobs:
       - run: flutter pub get
       - run: flutter test
       #- run: flutter build ios --release --no-codesign
-      - run: flutter build ipa --release --no-codesign
+      - run: flutter build ipa --release # without codesign not IPA created --no-codesign
+
+      - run: ls -a /Users/runner/work/flutter-test/flutter-test/build/ios/
 
       - uses: actions/upload-artifact@v4
         with:
