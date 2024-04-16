@@ -6,6 +6,7 @@
 name: Android_Release
 
 on:
+  on: workflow_dispatch
   push:
     branches: [ "no-branch" ]
 
