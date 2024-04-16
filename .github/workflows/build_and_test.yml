@@ -28,10 +28,16 @@ jobs:
         with:
           channel: stable
           flutter-version-file: pubspec.yaml # path to pubspec.yaml
+          cache: true
+          cache-key: "flutter-:os:-:channel:-:version:-:arch:-:hash:" # optional, change this to force refresh cache
 
       - run: flutter pub get
       - run: flutter test
-      - run: flutter build apk --debug # debug or release? is debug faster?
+      - run: ls -a
+      # - run: flutter build apk # debug or release? is debug faster?
+      # - run: flutter build appbundle
+
+      # TODO: caching
 
       - uses: actions/upload-artifact@v4
         with:
