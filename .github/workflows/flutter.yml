@@ -3,13 +3,7 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: Flutter Test
-
-on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+name: Flutter Full Build
 
 jobs:
   build:

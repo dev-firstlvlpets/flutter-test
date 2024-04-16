@@ -3,11 +3,11 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: Android-Release
+name: iOS-Release
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
 
     steps:
       - name: Clone repository
@@ -21,4 +21,5 @@ jobs:
 
       - run: flutter pub get
       - run: flutter test
-      - run: flutter build apk
+      - run: flutter build ios --release --no-codesign
+
