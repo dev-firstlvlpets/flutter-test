@@ -33,7 +33,7 @@ jobs:
 
       - run: flutter pub get
       - run: flutter test
-      - run: ls -a
+      - run: ls -a build/app/outputs/flutter-apk/
       # - run: flutter build apk # debug or release? is debug faster?
       # - run: flutter build appbundle
 
@@ -42,4 +42,5 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: App Release
-          path: ${{env.FLUTTER_ROOT}}/build/app/outputs/flutter-apk/app-release.apk
+          path: build/app/outputs/flutter-apk/
+          # path: ${{env.FLUTTER_ROOT}}/build/app/outputs/flutter-apk/app-release.apk
