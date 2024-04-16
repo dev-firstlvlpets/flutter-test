@@ -38,6 +38,7 @@ jobs:
         with:
           name: App Release
           #path: /Users/runner/work/flutter-test/flutter-test/build/ios/iphoneos/ # iOS Build
-          path: /Users/runner/work/flutter-test/flutter-test/build/ios/archive/Runner.xcarchive # IPA
+          #path: /Users/runner/work/flutter-test/flutter-test/build/ios/archive/Runner.xcarchive
+          path: /Users/runner/work/flutter-test/flutter-test/build/ios/ipa
 
 
