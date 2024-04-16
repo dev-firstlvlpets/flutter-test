@@ -3,7 +3,7 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: Android Release
+name: Android_Release
 
 jobs:
   build:
