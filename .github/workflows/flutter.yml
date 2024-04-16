@@ -6,7 +6,10 @@
 name: Flutter_Full_Build
 
 on:
-  on: workflow_dispatch
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'Log level'
   push:
     branches: [ "no-branch" ]
 
