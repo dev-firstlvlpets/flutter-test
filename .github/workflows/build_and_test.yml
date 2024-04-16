@@ -33,6 +33,9 @@ jobs:
 
       - run: flutter pub get
       - run: flutter test
+      - run: flutter build apk
+
+
       - run: ls -a 
       - run: ls -a ./build
       - run: ls -a ./build/app
