@@ -5,6 +5,10 @@
 
 name: iOS_Release
 
+on:
+  push:
+    branches: [ ]
+
 jobs:
   build:
     runs-on: macos-latest

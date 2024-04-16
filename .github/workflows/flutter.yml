@@ -5,6 +5,10 @@
 
 name: Flutter_Full_Build
 
+on:
+  push:
+    branches: [ ]
+
 jobs:
   build:
     runs-on: ubuntu-latest

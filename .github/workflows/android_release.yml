@@ -5,6 +5,10 @@
 
 name: Android_Release
 
+on:
+  push:
+    branches: [ ]
+
 jobs:
   build:
     runs-on: ubuntu-latest
